@@ -1,0 +1,74 @@
+/* mii_ang/pages/info/info.wxss */
+@import "../../../mii_ang/template/footer.wxss";
+page{
+  height: 100%;
+}
+.container {
+    background-image: url("https://wx11.mifun.mobi/addons/navlange_reserve_place/demo/img/info1@3x-100.jpg" );
+   background-attachment:fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    color: white;
+    padding-bottom: 400rpx;
+}
+.direction{
+  margin-top: 10rpx;
+  height: 525rpx;
+  width: 750rpx;
+}
+.off{
+  height: 0;
+}
+.when{
+  margin-top: 10rpx;
+  height: 487rpx;
+  width: 750rpx;
+  margin-bottom: 60rpx;
+}
+button{
+    background-color: transparent;
+    color: white;
+    font-size: 28rpx;
+    font-weight:500;
+    border: 2rpx solid white;
+    padding: 0rpx 15rpx 0rpx 15rpx;
+    border-radius: 8%;
+    width: 220rpx;
+    
+}
+.button{
+  margin-top: 20rpx;
+  margin-left: 100rpx;
+  width: 220rpx;
+}
+button:active{
+    color: black;
+    font-size: 28rpx;
+    font-weight:500;
+    border: 2rpx solid white;
+    padding: 0rpx 15rpx 0rpx 15rpx;
+    border-radius: 8%;
+    background-color: white;
+  }
+  .title{
+    margin-top: 6%;
+    margin-left: 100rpx;
+    color: white;
+    font-size: 70rpx;
+    font-weight: 100;
+  }
+  .title2{
+    margin-top: 20rpx;
+    margin-left: 100rpx;
+    color: white;
+    font-size: 70rpx;
+    font-weight: 100;
+  }
+  .details{
+    margin-left: 100rpx;
+    color: white;
+    font-size: 30rpx;
+    font-weight: 200;
+  }

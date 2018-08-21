@@ -1,0 +1,71 @@
+<import src="../../template/Toast.wxml"></import>
+<template is="toast" data="{{toast:toast}}"></template>
+<import src="../../template/input.wxml"></import>
+<template is="inputs" data="{{input:input}}"></template>
+<view class='title'>{{pageConstant.formA_title}}</view>
+<form bindsubmit="formSubmit">
+  <view class='formContent'>
+    <view class="timeData">
+    <view class='text'><text>{{pageConstant.from}}</text> {{from}}</view>
+  <view class='text'><text>{{pageConstant.to}}</text> {{to}}</view>
+      <view class="sectionTop sec1">
+        <view class="{{ isOn== 'return' ?'select2 selectCn':'select selectCn'}} {{ routeline== 1 ?'off':''}}" bindtap='chooseReturn'>
+          {{pageConstant.return}}
+        </view>
+        <view class="{{ isOn== 'oneway' ?'select2 selectEn':'select selectEn'}}" bindtap='chooseSingle'>
+         {{pageConstant.oneway}}
+        </view>
+      </view>
+    </view>
+    <view class="passengers">
+      <view class="formTitle">{{pageConstant.formA_2}}*</view>
+      <view class='calculateGroup c1'>
+        <text>{{pageConstant.formA_2A}}*\n</text>
+        <button class='calculate reduce' bindtap='reduceP'><view class='icon'>-</view></button>
+        <input type='number' disabled='true' name="passengers" bindinput="inputPassengers" value="{{passengers}}"></input>
+        <button class='calculate plus' bindtap='plusP'><view class='icon'>+</view></button>
+      </view>
+      <view class='calculateGroup c2'>
+        <text>{{pageConstant.formA_2B}}\n</text>
+        <button class='calculate reduce' bindtap='reduceC'><view class='icon'>-</view></button>
+        <input name="child" disabled='true' type='number' bindinput="inputChild" value="{{child}}"></input>
+        <button class='calculate plus' bindtap='plusC'><view class='icon'>+</view></button>
+      </view>
+      <view class='total'>
+        *{{pageConstant.formA_2C}} {{total}} / {{pageConstant.formA_2D}} {{remain}}
+    </view>
+    <view class="location">
+     <view class="sectionTop sec2">
+        <view class="section__title">{{pageConstant.formA_1B}}</view>
+        <picker class='picker2' mode="date" name="date" value="{{date}}" start="{{date1}}" end="{{date2}}" bindchange="bindDateChange">
+          <view class="picker">
+            <view class="date">{{date}}</view>
+            <image class="arrow" src="/images/icon/icon_15@2x.png" />
+          </view>
+        </picker>
+      </view>
+      <view class="section sec3">
+        <view class="section__title">{{pageConstant.formA_3A}}</view>
+        <picker class='picker3' name="pickup" bindchange="bindPickerPChange" value="{{indexP}}" range="{{arrayP}}">
+          <view class="picker">
+            <view class="choose">{{arrayP[indexP]}}</view>
+            <image class="arrow" src="/images/icon/icon_15@2x.png" />
+          </view>
+        </picker>
+      </view>
+      <view class="{{ isOn== 'return' ?'section sec4':'off'}}">
+        <view class="section__title">{{pageConstant.formA_3B}}</view>
+        <picker class='picker3' name="dropoff" bindchange="bindPickerDChange" value="{{indexD}}" range="{{arrayD}}">
+          <view class="picker">
+            <view class="choose">{{arrayD[indexD]}}</view>
+            <image class="arrow" src="/images/icon/icon_15@2x.png" />
+          </view>
+        </picker>
+      </view>
+    </view>
+  </view>
+  <button formType="submit" bindtap="submit" class='next' data-url="/mii_ang/pages/infoBookingForm/infoBookingForm?type={{type}}&bookingdate={{date}}&pickuptime={{pickuptime}}&returntime={{returntime}}&adult={{passengers}}&child={{child}}&routeline={{routeline}}">
+    {{pageConstant.next}}
+  </button>
+  </view>
+</form>

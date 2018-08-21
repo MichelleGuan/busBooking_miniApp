@@ -1,0 +1,138 @@
+.Gcard-box {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: 0.2;
+    overflow: hidden;
+    z-index: 999;
+    color: #fff;
+}
+
+.card-box {
+    position: fixed;
+    bottom: -300px;
+    left: 0;
+    width: 100%;
+    height: 285px;
+    margin-top: 5px;
+    background: #fff;
+    z-index: 2000;
+    border-radius: 20rpx 20rpx 0rpx 0rpx;
+    padding: 10px 0 0 0;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    color: transparent;
+}
+
+.card-list-box {
+    width: 710rpx;
+    height: 240rpx;
+    border-radius: 20rpx 20rpx 10rpx 10rpx;
+    box-shadow: 0px 2px 6px #ddd;
+    margin-bottom: 20rpx;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-list-box:last-child {
+    margin-bottom: 120rpx;
+}
+
+.card-list-box-top {
+    width: 710rpx;
+    height: 180rpx;
+    border-radius: 20rpx 20rpx 0 0;
+    background: #7A2BE2;
+    position: relative;
+}
+
+.card-list-box-bottom {
+    width: 710rpx;
+    height: 60rpx;
+    border-radius: 0 0 10rpx 10rpx;
+    position: relative;
+}
+
+.card-id {
+    width: 500rpx;
+    padding: 40rpx 30rpx 0 30rpx;
+    color: #fffff0;
+    font-size: 36rpx;
+    font-weight: normal;
+    float: left;
+}
+
+.card-title {
+    width: 520rpx;
+    padding: 5rpx 0 0 30rpx;
+    color: #fffff0;
+    font-weight: normal;
+    font-size: 28rpx;
+    float: left;
+    overflow: hidden;
+}
+
+.card-date-info {
+    width: 400rpx;
+    padding-left: 30rpx;
+    font-size: 24rpx;
+    color: #ddd;
+    height: 60rpx;
+    line-height: 60rpx;
+    overflow: hidden;
+    float: left;
+}
+
+.card-info {
+    width: 250rpx;
+    height: 60rpx;
+    float: left;
+    line-height: 60rpx;
+    color: #ddd;
+    overflow: hidden;
+    padding-right: 30rpx;
+    font-size: 24rpx;
+    text-align: right;
+}
+
+.usecard {
+    margin-right: 30rpx;
+    margin-top: 40rpx;
+    width: 110rpx;
+    height: 50rpx;
+    border-radius: 30rpx;
+    background-color: #ffffff;
+    float: right;
+    text-align: center;
+    line-height: 50rpx;
+    font-size: 32rpx;
+    color: #999;
+    border: 5rpx;
+    border-style: solid;
+    border-color: rgba(119,119,119,0.1);
+}
+
+.cancelcard {
+    display: block;
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100rpx;
+    background-color: #b58ada;
+    text-align: center;
+    line-height: 100rpx;
+    color: #fff;
+    border-radius: 20rpx 20rpx 0 0;
+    z-index: 3000;
+    font-size: 26rpx;
+    letter-spacing: 5rpx;
+}

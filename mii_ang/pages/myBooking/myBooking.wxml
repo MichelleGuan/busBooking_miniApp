@@ -1,0 +1,33 @@
+<!--mii_ang/pages/my booking/myBooking.wxml-->
+<view class="main">
+    <view class="title">
+        <text>
+            {{pageConstant.my_ticket}}
+        </text>
+    </view>
+    <view class="tickets" wx:for="{{tickets}}">
+        <view class="single-ticket-header" data-index="{{item.index}}" bindtap="onChangeShowState">
+            <view>
+                <text class="passenger_name">{{item.passengername1}}</text>
+                <text class="booking_time">{{item.bookingdate}}</text>
+            </view>
+        </view>
+        <view class="single-ticket-body {{item.toggle==false?'show':'hide'}}">
+            <view class="view-1">
+                <image mode="aspectFit" src="https://wx11.mifun.mobi/addons/navlange_reserve_place/demo/img/bus.png"></image><text class="passenger">{{item.quantity}} Passengers</text>
+            </view>
+        </view>
+        <view class="ticket-detail {{item.toggle==false?'show':'hide'}}" wx:for="{{item.fairdetail}}" wx:for-item="items">
+            <view class="singel-trip">
+                <text class="faretime">{{items.time}}</text>
+                <text class="farename">{{items.farename}}</text>
+            </view>
+        </view>
+        <view class="single-ticket-footer">
+            <text>Booking Confirmation: </text>
+            <text>{{item.tickets_id}}</text>
+        </view>
+    </view>
+</view>
+    <import src="../../../mii_ang/template/footer.wxml"></import>
+    <template is="tabBar" data="{{tabBar:bindData.tabBar}}" />

@@ -1,0 +1,39 @@
+.menu-box {
+    width: 100%;
+    height: auto;
+    padding: 0rpx 0rpx 20rpx 0rpx;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    position: relative;
+    border-bottom: 1rpx solid #f8f8f8;
+}
+
+.menu-list {
+    width: 25%;
+    height: auto;
+    text-align: center;
+    margin-top: 20rpx;
+    overflow: hidden;
+}
+
+.menupic {
+    width: 125rpx;
+    height: 125rpx;
+    border-radius: 15rpx;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menuname {
+    width: 80%;
+    line-height: 30rpx;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 30rpx;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10rpx;
+}

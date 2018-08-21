@@ -1,0 +1,107 @@
+/* mii_ang/pages/infoBookingForm/infoBookingForm.wxss */
+page{
+    background-image: url(https://wechat.weboostapp.com/web/resource/images/chadstone/booking-confirmation.jpg);
+    background-attachment:fixed;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+    color: white;
+}
+.next{
+  background-color: #fff;
+  color: black;
+  font-size: 60rpx;
+  line-height: 120rpx;
+  font-weight: 100;
+  position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    height: 60px;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius: 0;
+}
+
+.formTitle{
+  color: white;
+}
+input{
+  width: 500rpx;
+  display: inline-block;
+  text-align: left;
+  background-color:transparent;
+
+}
+.title{
+  font-size: 70rpx;
+  font-weight: 100;
+  text-align: left;
+  margin-top: 50rpx;
+  margin-bottom: 10rpx;
+  margin-left: 70rpx;
+  margin-right: 70rpx;
+}
+.formTitle image{
+  height: 30rpx;
+  width: 30rpx;
+}
+.formContent{
+  margin-left: 70rpx;
+  margin-right: 70rpx;
+
+  padding-bottom: 30rpx;
+}
+.formTitle{
+    padding: 10rpx;
+
+    font-weight: 100;
+}
+
+input{
+    margin-bottom: 8rpx;
+    width: 60rpx;
+    display: inline-block;
+    text-align: left;
+    font-size: 30rpx;
+    padding:15rpx;
+
+    border: solid #808080 1px;
+    border-radius: 6%;
+}
+
+.section__title{
+  font-size: 30rpx;
+}
+
+.section__title_bottom{
+  font-size: 25rpx;
+}
+.nameF,.nameL{
+  width: 50%;
+  display: inline-block;
+  margin-top: 60rpx;
+}
+.email,.phone{
+  margin-top: 15rpx;
+  width: 100%;
+}
+.nameF input,.nameL input{
+  
+  width: 80%;
+}
+.nameL input{
+    margin-left: 30rpx;
+}
+.email input,.phone input{
+ 
+  width: 95%;
+}
+.body-view{
+  margin-top: 60rpx;
+  font-size: 28rpx;
+}
+.terms{
+  text-decoration: underline;
+}

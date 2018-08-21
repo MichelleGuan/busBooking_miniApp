@@ -1,0 +1,100 @@
+.toad_content_box {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+    background: rgba(0,0,0,0.6);
+    animation: fade 1s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.toad_content {
+    width: 600rpx;
+    height: auto;
+    border-radius: 10rpx;
+}
+
+.ad-box {
+    width: 600rpx;
+    height: auto;
+    padding: 0px 0px 50rpx 0px;
+    background: #fff;
+    border-radius: 10rpx;
+    border-top-left-radius: 80rpx;
+    border-top-right-radius: 10rpx;
+    border-bottom-right-radius: 100rpx;
+    border-bottom-left-radius: 10rpx;
+}
+
+.ad-title {
+    width: 100%;
+    height: 80rpx;
+    font-size: 32rpx;
+    font-weight: bold;
+    text-align: center;
+    line-height: 80rpx;
+    border-top-left-radius: 80rpx;
+    border-top-right-radius: 10rpx;
+    background: -webkit-linear-gradient(-45deg,#fda78e,#fd677f);
+    color: #fff;
+    letter-spacing: 2rpx;
+}
+
+.ad-images {
+    width: 100%;
+    height: 400rpx;
+}
+
+.ad-info {
+    width: 540rpx;
+    height: 80rpx;
+    padding: 10rpx 30rpx;
+    font-size: 24rpx;
+    color: #333;
+    line-height: 42rpx;
+    overflow: hidden;
+}
+
+.ad-click {
+    width: 300rpx;
+    margin-top: 30rpx;
+    margin-left: 150rpx;
+    height: 80rpx;
+    background: -webkit-linear-gradient(-45deg,#fda78e,#fd677f);
+    border-radius: 80rpx;
+    text-align: center;
+    line-height: 80rpx;
+    font-size: 30rpx;
+    color: #fff;
+    display: inline-block;
+    letter-spacing: 2rpx;
+}
+
+.ad-close {
+    width: 600rpx;
+    height: 120rpx;
+    line-height: 180rpx;
+    text-align: center;
+}
+
+.ad-close image {
+    width: 80rpx;
+    height: 80rpx;
+    display: inline-block;
+}

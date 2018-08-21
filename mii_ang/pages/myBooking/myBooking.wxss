@@ -1,0 +1,143 @@
+/* mii_ang/pages/my booking/myBooking.wxss */
+@import "../../../mii_ang/template/footer.wxss";
+page{
+  background-image: url("https://wx11.mifun.mobi/addons/navlange_reserve_place/demo/img/bg-ticket.jpg" );
+  background-attachment:fixed;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  }
+.main
+{
+  padding: 0rpx 10%;
+  margin-bottom: 150rpx;
+}
+.title
+{
+  margin-bottom: 100rpx;
+}
+.title text
+{
+  color:white;
+  font-size:80rpx;
+  font-weight: 100;
+}
+.tickets
+{
+  margin-bottom: 5px;
+  box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.5);
+  border-radius:15px;
+}
+.single-ticket-header
+{
+  /* background-image: url("https://wx11.mifun.mobi/addons/navlange_reserve_place/demo/img/single-ticket-bg.png" );
+  background-size:cover; */
+  background: url("https://wx11.mifun.mobi/addons/navlange_reserve_place/demo/img/bg3.png" ) no-repeat;
+  background-size: 40rpx;
+  background-position: 95%;
+  height: 50px;
+  position: relative;
+  padding-left: 50rpx;
+  padding-right:80rpx;
+  background-color: white;
+  border-radius: 10px 10px 0px 0px;
+  border-bottom: dashed 1px black;
+}
+
+.single-ticket-header>view
+{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 500rpx;
+}
+
+.single-ticket-header .booking_time
+{
+  color:red;
+  font-size:13px;
+}
+.single-ticket-body
+{
+  background: white;
+  padding-left: 50rpx;
+}
+.single-ticket-body .view-1
+{
+  height:45px;
+}
+
+.single-ticket-body .view-1>image
+{
+  height: 30px;
+  width:30px;
+  display: inline-block;
+  position: relative;
+  top: 8px;
+  margin-right: 20px;
+}
+
+.ticket-detail
+{
+  background: #eee;
+  padding:0rpx 30rpx 0rpx 50rpx;
+}
+
+/* .singel-trip
+{
+  padding: 5px 0px;
+} */
+
+.ticket-detail .faretime
+{
+  color:red;
+  font-size:15px;
+  padding-right:30rpx;
+  display: table-cell;
+  max-width:80rpx;
+  min-width:80rpx;
+
+}
+
+.ticket-detail .farename
+{
+  color:black;
+  font-weight:100;
+  font-size:15px;
+  text-transform: capitalize!important;
+  display: table-cell;
+}
+ 
+.single-ticket-footer
+{
+  background: #fff;
+  padding-left: 50rpx;
+  padding: 5px 0px 5px 50rpx;
+  border-radius: 0px 0px 15px 15px;
+}
+
+.single-ticket-footer>text
+{
+  font-size:15px;
+}
+
+.single-ticket-footer>text:nth-child(2)
+{
+  color:red;
+  font-size:13px;
+}
+
+.hide
+{
+  display: none;
+}
+.show
+{
+  display: block;
+}
+
+
+.passenger_name
+  {
+    display:inline-block;
+    margin-right: 50rpx;
+  }

@@ -1,0 +1,73 @@
+@import "../../../__wuBaseWxss__/0.wxss";
+@import "../../../mii_ang/template/footer.wxss";
+.container {
+    background-image: url("https://wx11.mifun.mobi/addons/navlange_reserve_place/demo/img/wheretopage@2x.png" );
+    background-attachment:fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 240rpx;
+    height: 100%;
+    width: 100%;
+}
+page{
+    height: 100%;
+  }
+.list{
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    color: white;
+}
+
+.title{
+    position: absolute;
+    top: 15%;
+    text-align: left;
+    vertical-align: middle;
+    margin-left: 55rpx;
+  }
+  .test{
+    padding-left: 15rpx;
+    top:-12rpx;
+    color: white;
+    line-height: 65rpx;
+    display: inline-block;
+    position: relative;
+    font-size: 80rpx;
+    font-weight: 100;
+  }
+  .line{
+  padding: 20rpx;
+  margin-top: 65rpx;
+  font-size: 35rpx;
+  font-weight: 100;
+  margin-left: 50rpx;
+  align-self: flex-start;
+  }
+  
+  text{
+  font-size: 30rpx;
+  font-weight: 100;
+  }
+  .booking{
+    background-color:transparent;
+    color: white;
+    padding: 12rpx;
+    padding-left: 45rpx;
+    margin-left: 70rpx;
+    font-size: 35rpx;
+    font-weight: 100;
+    padding-right: 45rpx;
+    margin-top: 0rpx;
+    align-self:flex-start;
+    border: 2rpx white solid;
+    border-radius: 10rpx;
+  }
+  .booking:active{
+    background-color:#999;
+  }
+
+
+  

@@ -1,0 +1,22 @@
+<template name="pay">
+    <form reportSubmit bindsubmit="payInfo">
+        <view class="input_content_box" wx:if="{{pay.isHide}}">
+            <view class="input_content">
+                <view class="input_top">  
+        会员卡充值
+        <image bindtap="payclose" class="close" src="/images/icon/close.png"></image>
+                </view>
+                <view class="inputBox">
+                    <view class="input-list">
+                        <view class="l-title">
+          充值金额
+          <strong>*</strong>
+                        </view>
+                        <input bindinput="payNumber" class="r-input" id="payNumber" placeholder="请输入充值金额" type="digit" value="{{input.payNumber}}"></input>
+                    </view>
+                </view>
+                <button bindtap="recharge" class="save-btn" formType="submit">确认</button>
+            </view>
+        </view>
+    </form>
+</template>

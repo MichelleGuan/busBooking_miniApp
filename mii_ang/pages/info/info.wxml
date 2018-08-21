@@ -1,0 +1,16 @@
+<!--mii_ang/pages/info/info.wxml-->
+<view class='container'>
+ <image style="width:400rpx;margin:0 auto;display:block;margin-top:-100rpx;margin-bottom:-150rpx;" mode="aspectFit" src="../../../images/icon/icon_logo_white@3x.png"></image>
+<view class="{{direction=='on'?'title2':'title'}}">{{pageConstant.directions}}</view>
+<view class='details'>{{pageConstant.details1}}</view>
+<view class='button'><button bindtap='direction'>{{pageConstant.map}}</button></view>
+<image src="/images/icon/info-map-bus-stop.jpg" class="{{direction=='on'?'direction':'off'}}"/>
+
+   <view class="{{direction=='on'?'title2':'title'}}">{{pageConstant.when}}</view>
+<view class='details'>{{pageConstant.details2}}</view>
+<view class='button'><button bindtap='when'>{{pageConstant.timetable}}</button></view>
+     <image src="/images/icon/info-timetable2.jpg" class="{{when=='on'?'when':'off'}}"/>
+      
+    <import src="../../../mii_ang/template/footer.wxml"></import>
+    <template is="tabBar" data="{{tabBar:bindData.tabBar}}"/>
+</view>

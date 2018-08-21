@@ -1,0 +1,19 @@
+<template name="Getcard">
+    <view bindtap="cancelcard" class="Gcard-box" wx:if="{{Gcard.isHide}}"></view>
+    <scroll-view animation="{{Gcard.animationData}}" class="card-box" scrollY="true">
+        <view class="card-list-box" wx:for="{{Gcard.cardList}}" wx:for-item="card" wx:key="id">
+            <view class="card-list-box-top" style="background-color: {{card.bg_color}};">
+                <view class="card-id">
+                    <span>编号:</span>{{card.card_on}}</view>
+                <view bindtap="usecard" class="usecard" data-cid="{{card.card_id}}" data-discount="{{card.discount?card.discount:''}}" data-iid="{{card.id}}" data-minus="{{card.minus?card.minus:''}}" data-oid="{{card.card_on}}" data-tid="{{card.card_type}}" data-title="{{card.title}}">使用</view>
+                <view class="card-title">{{card.title}}</view>
+            </view>
+            <view class="card-list-box-bottom">
+                <view class="card-date-info">
+                    <span>有效期: </span>{{card.date}}</view>
+                <view class="card-info">{{card.card_info}}</view>
+            </view>
+        </view>
+    </scroll-view>
+    <view bindtap="cancelcard" class="cancelcard" wx:if="{{Gcard.isHide}}">不使用优惠券</view>
+</template>

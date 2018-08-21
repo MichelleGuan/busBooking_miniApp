@@ -1,0 +1,35 @@
+<template name="logdetails">
+    <view class="elayer-body" wx:if="{{logdetails.isHide}}">
+        <view class="elayer-content">
+            <view class="elayer-box">
+                <image class="success-pay-ico" src="{{logdetails.payStatus==1?'/images/icon/success-pay.png':'/images/icon/fail-pay.png'}}"></image>
+                <view class="elayer-title">{{logdetails.payStatus==1?'支付成功':'支付失败'}}</view>
+                <view class="elayer-prize">
+                    <span class="elayer-money">{{logdetails.payFee}}</span>
+                    <span class="elayer-unit"> $</span>
+                </view>
+                <view class="elayer-order-box">
+                    <view class="elayer-order-info-list">支付类型  <span class="elayer-order-info-data">{{logdetails.payType=='wechat'?'微信支付':''}}{{logdetails.payType=='mcard'?'会员卡支付':''}}</span>
+                    </view>
+                    <view class="elayer-order-info-list">订单备注  <span class="elayer-order-info-data">{{logdetails.payNote}}</span>
+                    </view>
+                    <view class="elayer-order-info-list">订单编号  <span class="elayer-order-info-data">{{logdetails.payOn}}</span>
+                    </view>
+                    <view class="elayer-order-info-list">卡券优惠  <span class="elayer-order-info-data">{{logdetails.cardDiscount?logdetails.cardDiscount+' $':'0.00 $'}}</span>
+                    </view>
+                    <view class="elayer-order-info-list" wx:if="{{logdetails.payType=='mcard'}}">会员卡优惠 <span class="elayer-order-info-data">{{logdetails.mcardDiscount?logdetails.mcardDiscount+' $':'0.00 $'}}</span>
+                    </view>
+                    <view class="elayer-order-info-list">订单总额  <span class="elayer-order-info-data">{{logdetails.payTotal+' $'}}</span>
+                    </view>
+                    <view class="elayer-order-info-list" wx:if="{{logdetails.typeid=='recharge_mcard'}}">系统赠送  <span class="elayer-order-info-data">{{logdetails.payGive+' $'}}</span>
+                    </view>
+                    <view class="elayer-order-info-list">系统对照创建时间  <span class="elayer-order-info-data">{{logdetails.payAddtime}}</span>
+                    </view>
+                    <view class="elayer-order-info-list">系统对照完成时间  <span class="elayer-order-info-data">{{logdetails.payTime}}</span>
+                    </view>
+                </view>
+            </view>
+            <view bindtap="econfirm" class="elayer-confirm">确定</view>
+        </view>
+    </view>
+</template>

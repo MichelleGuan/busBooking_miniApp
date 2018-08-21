@@ -1,0 +1,25 @@
+<import src="../../template/Toast.wxml"></import>
+<view class="container">
+    <view class='title'>
+        <view class='test'>{{pageConstant.chooseBus}}?</view>
+    </view>
+    <view class="total" wx:for="{{active.data}}" wx:for-item="goods" wx:key="routeline">
+        <view class="list {{item.type}}">
+            <view class="line">
+                <view class="location" bindtap="gobook" data-url="/mii_ang/pages/book/index?gid={{goods.routeline}}">
+                    <text>{{pageConstant.from}}</text>
+                    {{goods.fairstartname}}
+                </view>
+                <view class="location">
+                    <text>{{pageConstant.to}}</text>
+                    {{goods.fairendname}}
+                </view>
+            </view>
+            <view bindtap="gobook" class="booking" data-url="/mii_ang/pages/book/index?gid={{goods.routeline}}">
+                {{pageConstant.bookingBtn}}
+            </view>
+        </view>
+    </view>
+    <import src="../../../mii_ang/template/footer.wxml"></import>
+    <template is="tabBar" data="{{tabBar:bindData.tabBar}}" />
+</view>

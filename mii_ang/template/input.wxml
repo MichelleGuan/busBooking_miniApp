@@ -1,0 +1,30 @@
+<template name="inputs">
+    <form reportSubmit bindsubmit="SaveBook">
+        <view class="input_content_box" wx:if="{{input.isHide}}">
+            <view class="input_content">
+                <view class="input_top">  
+        绑定信息
+        <image bindtap="close" class="close" src="/images/icon/close.png"></image>
+                </view>
+                <view class="inputBox">
+                    <view class="input-list">
+                        <view class="l-title">
+          姓名
+          <strong>*</strong>
+                        </view>
+                        <input bindinput="uname" class="r-input" id="name" placeholder="请输入姓名" value="{{input.uname}}"></input>
+                    </view>
+                    <view class="input-list">
+                        <view class="l-title">
+          电话
+          <strong>*</strong>
+                        </view>
+                        <input bindinput="uphone" class="r-input"  id="phone" placeholder="请输入联系电话" value="{{input.uphone}}"></input>
+
+                    </view>
+                </view>
+                <button bindtap="save" class="save-btn" formType="submit">提交</button>
+            </view>
+        </view>
+    </form>
+</template>

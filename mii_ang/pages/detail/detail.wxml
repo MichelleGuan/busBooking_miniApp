@@ -1,0 +1,33 @@
+
+<view class="main">
+    <view class="title">
+        <text>
+            {{pageConstant.success_title}}
+        </text>
+            <text>{{pageConstant.success_head}} {{email}}</text>
+    </view>
+    <view class="tickets">
+        <view class="single-ticket-header">
+            <view>
+                <text class="passenger_name">{{firstname}} {{lastname}}</text>
+                <text class="booking_time">{{bookingdate}}</text>
+                </view>
+            </view>
+        <view class="single-ticket-body">
+            <view class="view-1">
+                <image mode="aspectFit" src="https://wx11.mifun.mobi/addons/navlange_reserve_place/demo/img/bus.png"></image><text class="passenger">{{passenger}} Passengers</text>
+            </view>
+        </view>
+        <view class="ticket-detail" wx:for="{{route_detail}}" wx:for-item="items">
+            <view class="singel-trip">
+                <text class="faretime {{items.time=='unset'?'show':'hide'}}">{{items.time}}</text>
+                <text class="farename">{{items.routename}}</text>
+            </view>
+        </view>
+        <view class="single-ticket-footer">
+            <text>Booking Confirmation: </text>
+            <text>{{confirm_number}}</text>
+        </view>
+    </view>
+</view>
+<button class='next' bindtap='done'>{{pageConstant.done}}</button>

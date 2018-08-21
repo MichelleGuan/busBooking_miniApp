@@ -1,0 +1,53 @@
+<!--mii_ang/pages/terms/terms.wxml-->
+<view class='title'>{{pageConstant.terms_title}}</view>
+<view class='content'><text>
+Chadstone Free Shuttle Bus Service Agreement\n
+1. Introduction 
+(a) Addictive Entertainment & Tours Pty Ltd (ACN 104 999 108) (AET) has been engaged by Vicinity Centres PM Pty Ltd (ACN 101 504 045) (VCPM), as the property manager of Chadstone shopping centre (Chadstone), to operate a free shuttle bus service between Chadstone and various locations in Melbourne including Federation Square (Shuttle Service). 
+(b) You would like to book a seat on the Shuttle Service (Booking). 
+(c) By making the Booking, you and anyone who accompanies you on the Shuttle Service as specified in the Booking (Passenger or You) agree, or are deemed to have agreed, to the terms and conditions set out in this Agreement. \n
+2. Bookings 
+(a) When making a Booking, the Passenger must provide AET with all relevant details including dates of travel and contact name(s). 
+(b) Passengers who have made their Booking online via the Booking website must present their confirmation order (either as a hard copy print out or on a portable electronic device) to the driver when boarding the Shuttle Service. 
+(c) If a Passenger is late for a scheduled Shuttle Service, AET may reserve that Passenger a seat on the next scheduled Shuttle Service. 
+(d) Where the Passenger is late for the last scheduled evening Shuttle Service from Chadstone, AET shall not be liable for the payment of any alternative transport arrangements or accommodation costs. \n
+3. Scheduled Shuttle Services 
+(a) AET will use reasonable efforts to meet scheduled Shuttle Service departure and arrival times. AET retains the right to change timetables, itineraries and Bookings and may cancel Bookings due to circumstances beyond its reasonable control including road conditions, traffic congestion, weather conditions, technology or incorrect Booking(s) made by Passengers. 
+(b) All scheduled Shuttle Service departure and arrival times are correct at the time of publishing. \n
+4. Infants and Children 
+(a) Children aged 15 years and under are not permitted to travel alone on a Shuttle Service and must be accompanied by a Passenger who is a parent or guardian. 
+(b) Children aged 16 years and over may travel alone on a Shuttle Service but their supervision and safety remains at all times the sole responsibility of their parent or guardian. \n
+5. Smoking, Alcohol and Food 
+(a) AET strictly prohibits smoking and the consumption of alcohol, non-prescription drugs, food and drinks on board any Shuttle Service. 
+(b) AET may refuse to transport, or may remove from a Shuttle Service, any Passenger who, in the reasonable opinion of AET or a Shuttle Service driver, is affected by drugs and / or alcohol.\n 
+6. Behaviour 
+A Passenger may be directed to disembark a Shuttle Service, or permission to board a Shuttle Service may be refused, if, in the reasonable opinion of AET or a Shuttle Service driver: 
+(a) other Passengers feel threatened or at risk by violent, abusive or aggressive behaviour; or 
+(b) such Passenger is causing a disturbance, distress or discomfort to any other passenger or the Shuttle Service driver. \n
+7. Baggage 
+(a) Passengers should always carry valuable items on their person during a Shuttle Service, as AET and VCPM accept no responsibility for loss of, or damaged, baggage. 
+(b) Passengers are responsible for the protection of fragile items and must ensure that no item causes any danger, obstruction or inconvenience to other passengers, a Shuttle Service driver or AET. \n
+8. Uncollected Baggage 
+(a) AET and VCPM accept no responsibility for any baggage or property that is left on board a Shuttle Service by a Passenger. \n
+9. Animals 
+(a) Pets and other animals are not permitted on board any Shuttle Service with the exception of guide dogs. \n
+10. Privacy 
+(a) As part of making a Booking, Passengers may be asked to provide personal information, details and data about themselves (Personal Information). 
+(b) By making a Booking, Passengers agree that: 
+(i) AET may disclose your Personal Information to VCPM and VCPM's related entities, 
+related bodies corporate, employees, agents, contractors and agents (VCPM Related 
+Parties); 
+(ii) VCPM and the VCPM Related Parties may collect, use, disclose and handle your 
+Personal Information in accordance with VCPM's privacy policy(http://www.vicinity.com.au/privacy-policy); and (iii) for the avoidance of doubt, VCPM and the VCPM Related Parties may use or disclose your Personal Information for, without limitation, marketing campaigns, promotional activities, surveys, mail outs, analysis and market research. For the purpose of this sub clause, the Passenger agrees on his / her own behalf and on behalf of any person who accompanies the Passenger on any Shuttle Service as per the Booking. \n
+11. Limitation of Liability 
+The Passenger acknowledges that: 
+(a) VCPM has engaged AET to operate the Shuttle Service; 
+(b) VCPM and each of the VCPM Related Parties shall in no way be liable to the Passenger for any loss or injury (whether to person or property) suffered by the Passenger directly or indirectly resulting from a Shuttle Service or any act or thing done or omitted to be done (whether negligent or not) by AET or its employees, contractors and agents.
+</text>
+</view>
+        <view class="btn-area">
+            <button formType="submit" bindtap="agree" class='next'>{{pageConstant.confirm}}</button>
+        </view>
+
+
+

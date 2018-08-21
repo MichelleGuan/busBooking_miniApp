@@ -1,0 +1,277 @@
+@import "../../../__wuBaseWxss__/12.wxss";
+
+@import "../../template/Getcard.wxss";
+
+@import "../../template/TimeSlot.wxss";
+
+@import "../../template/input.wxss";
+
+@import "../../template/Toast.wxss";
+
+page{
+    background-image: url("https://wx11.mifun.mobi/addons/navlange_reserve_place/demo/img/booking@2x.png" );
+    background-attachment:fixed;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+    color: white;
+}
+button{
+ padding: 0;
+ margin: 0;
+}
+.chooseS{
+  display: inline-block;
+  width: 125rpx;
+}
+.off{
+  display: none;
+}
+.title{
+  font-size: 60rpx;
+  font-weight: 200;
+  margin-left: 80rpx;
+  text-align: left;
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+  width: 500rpx;
+}
+.formContent{
+  margin-left: 45rpx;
+  margin-right: 45rpx;
+}
+.text{
+  margin-left: 40rpx;
+  font-size: 30rpx;
+}
+.text text{  
+  font-size: 30rpx;
+  font-weight: 100;
+}
+.formTitle image{
+  height: 30rpx;
+  width: 30rpx;
+}
+.total{
+  text-align: center;
+  color: white;
+  padding: 8rpx;
+  background-color:rgba(255, 255, 255, 0.2);
+  font-size: 30rpx;
+  line-height: 60rpx;
+  font-weight: 400;
+  position: fixed;
+    bottom: 60px;
+    left: 0px;
+    right: 0px;
+    height: 4%;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius: 0;
+}
+.next{
+  background-color: #fff;
+  color: black;
+  font-size: 60rpx;
+  line-height: 120rpx;
+  font-weight: 100;
+  position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    height: 60px;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius: 0;
+}
+
+.calculate{
+  display: inline-block;
+  background-color: white;
+  color: black;
+  width: 55rpx;
+  height: 55rpx;
+  font-size: 60rpx;
+  line-height: 45rpx;
+  font-weight: 300;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.icon{
+  display: inline-block;
+
+}
+.calculate:active{
+  background-color: #999;
+  box-shadow: 2px 2px 2px gray, 0 0 2px gray, 0 0 2px gray;
+}
+.next:active{
+  background-color: #999;
+}
+.formTitle{
+  color: white;
+   padding: 10rpx;
+   padding-left: 40rpx;
+   font-weight: 500;
+}
+.passengers{
+  margin-top: 120rpx;
+}
+input{
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  width: 160rpx;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  border:rgba(255, 255, 255, 0.6) 1rpx solid;
+  border-radius: 5rpx;
+}
+.calculateGroup text{
+font-size: 30rpx;
+font-weight: 550;
+width: 260rpx;
+display: inline-block;
+vertical-align: middle;
+margin-left: 40rpx;
+
+}
+.calculateGroup{
+  width: 650rpx;
+  display: inline-block;
+  margin-top: 15rpx;
+  margin-bottom: 20rpx;
+}
+
+.section__title{
+  font-size: 30rpx;
+  margin-left: 60rpx;
+}
+picker{
+  background-color: transparent;
+  font-size: 28rpx;
+  width: 300rpx;
+}
+
+.picker1,.picker2{
+   display: inline-block;
+   padding:15rpx;
+   margin-left: 40rpx;
+   border: solid #808080 1px;
+   border-radius: 6%;
+}
+.picker1{
+  width: 175rpx;
+ 
+}
+.picker2{
+  width: 550rpx;
+}
+.sectionTop{
+  display: inline-block;
+  margin-top: 40rpx;
+}
+.sectionTop image{
+  height: 30rpx;
+  width: 30rpx;
+  display: inline-block;
+}
+.sec1{
+  margin-top: -30rpx;
+  margin-left: 40rpx;
+  width: 100%;
+}
+.sec2{
+  width: 100%
+}
+.picker3{
+  padding:15rpx;
+  border: solid #808080 1px;
+  border-radius: 5%;
+  margin-left: 40rpx;
+  width: 200rpx;
+  font-weight: 500;
+  padding-left: 40rpx;
+  padding-right: 0;
+}
+.sec4{
+  margin-top: 30rpx;
+  width: 50%;
+ display: inline-block;
+}
+.sec3{
+  display: inline-block;
+  margin-top: 30rpx;
+  width: 50%;
+}
+.location{
+  padding-bottom: 40rpx;
+  position: relative;
+}
+.sec3 .section__title,.sec4 .section__title{
+  font-size: 30rpx;
+  margin-left: 60rpx;
+}
+.locationImg{
+  position: absolute;
+  top:150rpx;
+  left:60rpx;
+  height: 220rpx;
+  width: 25rpx;
+}
+.arrow{
+  width: 28rpx !important;
+  height: 18rpx !important;
+  font-size: 30rpx;
+  font-weight: 300;
+}
+.sec1 .arrow{
+  margin-left: 10rpx;
+}
+.sec2 .arrow{
+  margin-left: 10rpx;
+}
+.sec3 .arrow,.sec4 .arrow{
+  display: inline-block;
+  width: 50rpx;
+}
+.choose{
+  display: inline-block;
+  width: 150rpx;
+}
+.date{
+  padding-left: 25rpx;
+  display: inline-block;
+  width: 470rpx;
+}
+.select{
+  background-color: transparent;
+  color: white;
+  font-size: 25rpx;
+  font-weight:400;
+  border: 2rpx solid white;
+  padding: 12rpx;
+  text-align: center;
+  border-radius: 8%;
+  width: 180rpx;
+}
+.select2{
+  color: black;
+  font-size: 25rpx;
+  font-weight:400;
+  text-align: center;
+  border: 2rpx solid white;
+  padding: 12rpx;
+  border-radius: 8%;
+  background-color: white;
+  width: 180rpx;
+}
+.selectEn{
+   position: absolute;
+    left: 12%;
+}
+.selectCn{
+position: absolute;
+    right: 20%;
+}

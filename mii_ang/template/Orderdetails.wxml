@@ -1,0 +1,45 @@
+<template name="orderdetails">
+    <view class="order_content_box" wx:if="{{orders.isHide}}">
+        <view class="details_content">
+            <view class="Or-box">
+                <view class="goodsinfo">
+                    <image class="goodspic" src="{{orders.info.attachurl}}{{orders.info.titlepic}}"></image>
+                    <view class="info-list">
+                        <span>服务名称:</span> {{orders.info.goodsname}}</view>
+                    <view class="info-list">
+                        <span>服务简介:</span> {{orders.info.summary}}</view>
+                    <view class="info-list">
+                        <span>预约时间:</span> {{orders.info.details.booktime}}</view>
+                    <view class="cler"></view>
+                </view>
+                <view class="orderinfo">
+                    <view class="orderinfo-list">
+                        <span>订单编号:</span>
+                        <span class="info-war"> {{orders.info.orderid}}</span>
+                    </view>
+                    <view class="orderinfo-list">
+                        <span>订单总额:</span> {{orders.info.goods_money}}</view>
+                    <view class="orderinfo-list">
+                        <span>预约服务:</span> {{orders.info.details.goodsname}}</view>
+                    <view class="orderinfo-list">
+                        <span>预约时段:</span> {{orders.info.details.booktime}}</view>
+                    <view class="orderinfo-list">
+                        <span>预约类型:</span> {{orders.info.order_type=='1'?'免费预约':'支付预约'}}</view>
+                    <view class="orderinfo-list">
+                        <span>创建时间:</span> {{orders.info.addtime}}</view>
+                    <view class="orderinfo-list">
+                        <span>优惠金额:</span> {{orders.info.discountmoney}}</view>
+                    <view class="orderinfo-list">
+                        <span>已付金额:</span> {{orders.info.pay_money}}</view>
+                    <view class="orderinfo-list">
+                        <span>到店需付:</span> {{orders.info.on_money}}</view>
+                    <view class="orderinfo-list">
+                        <span>订单状态:</span> {{orders.info.is_ok=='1'?'已完成':'未完成'}}</view>
+                </view>
+            </view>
+            <view bindtap="close" class="Or-close">
+                <image bindtap="close" src="/images/icon/ad-close.png"></image>
+            </view>
+        </view>
+    </view>
+</template>

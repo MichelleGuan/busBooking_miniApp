@@ -1,0 +1,8 @@
+<template name="menu">
+    <view class="menu-box">
+        <view class="menu-list" wx:for="{{menuData}}" wx:for-item="menu" wx:key="id">
+            <image bindtap="Jumpurl" class="menupic" data-url="{{menu.url}}" src="{{attachurl}}{{menu.imageurl}}"></image>
+            <view bindtap="Jumpurl" class="menuname" datatUrl="{{menu.url}}" style="color:{{menu.font_color}};">{{menu.name}}</view>
+        </view>
+    </view>
+</template>

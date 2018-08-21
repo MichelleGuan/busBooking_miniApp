@@ -1,0 +1,7 @@
+<view class="container">
+    <view class="textContainer">
+        <text class="textStyle">{{text}}</text>
+    </view>
+</view>
+<import src="/mii_ang/pages/templates/footer.wxml"></import>
+<template is="footerWx" data="{{...tabBar}}"></template>

@@ -1,0 +1,31 @@
+<template name="paySuccesslayer">
+    <view class="elayer-body" wx:if="{{paySuccesslayer.isHide}}">
+        <view class="elayer-content">
+            <view class="elayer-box">
+                <image class="success-pay-ico" src="/images/icon/success-pay.png"></image>
+                <view class="elayer-title">{{paySuccesslayer.payStatus==1?'支付成功':'支付失败'}}</view>
+                <view class="elayer-prize">
+                    <span class="elayer-money">{{paySuccesslayer.data.payFee}}</span>
+                    <span class="elayer-unit"> $</span>
+                </view>
+                <view class="elayer-order-box">
+                    <view class="elayer-order-info-list">支付类型  <span class="elayer-order-info-data">{{paySuccesslayer.data.payType=='wechat'?'微信支付':''}}{{paySuccesslayer.data.payType=='mcard'?'会员卡支付':''}}</span>
+                    </view>
+                    <view class="elayer-order-info-list">订单编号  <span class="elayer-order-info-data">{{paySuccesslayer.data.payOn}}</span>
+                    </view>
+                    <view class="elayer-order-info-list">卡券优惠  <span class="elayer-order-info-data">{{paySuccesslayer.data.cardDiscount?paySuccesslayer.data.cardDiscount+' $':'0.00 $'}}</span>
+                    </view>
+                    <view class="elayer-order-info-list" wx:if="{{paySuccesslayer.data.payType=='mcard'}}">会员卡优惠 <span class="elayer-order-info-data">{{paySuccesslayer.data.mcardDiscount?paySuccesslayer.data.mcardDiscount+' $':'0.00 $'}}</span>
+                    </view>
+                    <view class="elayer-order-info-list" wx:if="{{paySuccesslayer.data.payType=='mcard'}}">会员当前余额  <span class="elayer-order-info-data">{{paySuccesslayer.data.mcardBalance+' $'}}</span>
+                    </view>
+                    <view class="elayer-order-info-list">订单总额  <span class="elayer-order-info-data">{{paySuccesslayer.data.payTotal+' $'}}</span>
+                    </view>
+                    <view class="elayer-order-info-list">系统对照时间  <span class="elayer-order-info-data">{{paySuccesslayer.data.payTime}}</span>
+                    </view>
+                </view>
+            </view>
+            <view bindtap="econfirm" class="elayer-confirm">确定</view>
+        </view>
+    </view>
+</template>

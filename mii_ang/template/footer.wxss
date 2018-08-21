@@ -1,0 +1,31 @@
+/* templetes/footer.wxss */
+.icon{
+  width:45rpx;
+  height: 45rpx;
+  margin-bottom: 10rpx;
+  margin-top: 18rpx;
+}
+.tabBar{
+  width:100%;
+  position: fixed;
+  bottom:0;
+  padding-bottom:15rpx;
+  background:#fff;
+  font-size:25rpx;
+  color:#999;
+}
+
+ .tabBar-item{
+  float:left;
+  width:33.33%;
+  text-align: center;
+  overflow: hidden;
+}
+/*当前字体颜色*/
+.tabBartext{
+  color:#000;
+   margin-top: -10rpx;
+}
+.text{
+   margin-top: -10rpx;
+}

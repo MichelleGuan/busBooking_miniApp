@@ -1,0 +1,19 @@
+{
+  "pages": [
+    "mii_ang/pages/index/index",
+    "mii_ang/pages/book/index",
+    "mii_ang/pages/service/service",
+    "mii_ang/pages/detail/detail",
+    "we7/pages/user/index/index",
+    "mii_ang/pages/infoBookingForm/infoBookingForm",
+    "mii_ang/pages/myBooking/myBooking",
+    "mii_ang/pages/info/info",
+    "mii_ang/pages/terms/terms"
+  ],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "",
+    "navigationBarBackgroundColor": "#0A1016",
+    "backgroundColor": "#000000"
+  }
+}

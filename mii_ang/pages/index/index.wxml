@@ -1,0 +1,12 @@
+<view class="container">
+  <image style="width:400rpx;" mode="aspectFit" src="../../../images/icon/icon_logo_white@3x.png"></image>
+    <view class='languageTitle'>
+        <view>FREE</view>
+        <view>TOURIST</view>
+        <view>SHUTTLE BUS</view>
+    </view>
+    <view class='chooseCn'>AT CHADSTONE</view>
+    <view class="{{ isOn==1 ?'select2 selectCn spaceT':'select selectCn spaceT'}}" bindtap='chooseCn'><text class="space">中</text>文</view>
+    <view class="{{ isOn==0 ?'select2 selectEn':'select selectEn'}}" bindtap='chooseEn'>ENGLISH</view>
+    <view class='footer'>Copyright @ 2018 WeBoost</view>
+</view>

@@ -1,0 +1,8 @@
+<template name="loading">
+    <view class="loading_box" wx:if="{{loading=='show'}}">
+        <view class="pulse pulse_1"></view>
+        <view class="pulse pulse_2"></view>
+        <view class="pulse pulse_3"></view>
+        <view class="pulse pulse_4"></view>
+    </view>
+</template>

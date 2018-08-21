@@ -1,0 +1,36 @@
+<template name="TimeSlot">
+    <view bindtap="cancelTimeSlot" class="Gdate-box" wx:if="{{TimeSlot.isHide}}"></view>
+    <view animation="{{TimeSlot.animationData}}" class="date-box">
+        <scroll-view class="filter" scrollX="true" scroolIntoView="time-box">
+            <view bindtap="changeFilter" class="filter-item {{TimeSlot.active.week==item.week?'filter-active':''}}" data-date="{{item.date}}" data-index="{{index}}" data-rest="{{item.iSrestDay}}" id="{{item.week}}" wx:for="{{TimeSlot.Days}}" wx:key="id">
+                <text data-index="{{index}}" id="{{item.week}}">{{item.date_cn}}</text>
+                <text data-index="{{index}}" id="{{item.week}}">{{item.date}}</text>
+            </view>
+        </scroll-view>
+        <scroll-view class="time-box" id="time-box" scrollY="true" wx:if="{{TimeSlot.active.iSrestDay==-1}}">
+            <view class="am-box" wx:if="{{TimeSlot.active.Time.AM.length>0}}">
+                <view class="box-title">AM</view>
+                <view bindtap="SelectedTime" class="time-data {{am.status=='-1'?'':'disabled'}} {{TimeSlot.active.start==am.start?'time-selected':''}}" data-end="{{am.end}}" data-end_cn="{{am.end_cn}}" data-start="{{am.start}}" data-start_cn="{{am.start_cn}}" data-status="{{am.status}}" wx:for="{{TimeSlot.active.Time.AM}}" wx:for-item="am" wx:key="id">{{am.start_cn}}-{{am.end_cn}}</view>
+                <view class="itemempty">20:00-00:00</view>
+                <view class="itemempty">20:00-00:00</view>
+                <view class="itemempty">20:00-00:00</view>
+                <view class="itemempty">20:00-00:00</view>
+            </view>
+            <block wx:if="{{TimeSlot.active.Time.PM.length>0}}">
+                <view class="pm-box">
+                    <view class="box-title">PM</view>
+                    <view bindtap="SelectedTime" class="time-data {{pm.status=='-1'?'':'disabled'}} {{TimeSlot.active.start==pm.start?'time-selected':''}}" data-end="{{pm.end}}" data-end_cn="{{pm.end_cn}}" data-start="{{pm.start}}" data-start_cn="{{pm.start_cn}}" data-status="{{pm.status}}" wx:for="{{TimeSlot.active.Time.PM}}" wx:for-item="pm" wx:key="id">{{pm.start_cn}}-{{pm.end_cn}}</view>
+                    <view class="itemempty">20:00-00:00</view>
+                    <view class="itemempty">20:00-00:00</view>
+                    <view class="itemempty">20:00-00:00</view>
+                    <view class="itemempty">20:00-00:00</view>
+                </view>
+                <view class="time-box-empty"></view>
+            </block>
+        </scroll-view>
+        <view class="rest-box" wx:elif="{{TimeSlot.active.iSrestDay==1}}">
+            <image src="/images/bg/rest.png"></image>
+        </view>
+        <view bindtap="Timeconfirm" class="time-confirm" wx:if="{{TimeSlot.isHide}}">确认</view>
+    </view>
+</template>

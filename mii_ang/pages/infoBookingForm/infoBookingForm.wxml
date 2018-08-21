@@ -1,0 +1,38 @@
+<!--mii_ang/pages/infoBookingForm/infoBookingForm.wxml-->
+<view class='title'>{{pageConstant.booking_confirmation_label}}</view>
+<form bindsubmit="formSubmit">
+    <view class="formContent">
+        <view class="confirmaton">
+            <view class="formTitle">
+                {{pageConstant.contact_details_label}}</view>
+            <view class="nameF">
+                <view class="section__title">{{pageConstant.passanger_label}}</view>
+                <input name="firstname" bindinput="firstname" value="{{firstname}}" placeholder='{{pageConstant.firstName_placeholder}}'></input>
+            </view>
+            <view class="nameL">
+                <input name="lastname" bindinput="lastname" value="{{lastname}}" placeholder='{{pageConstant.lastName_placeholder}}'></input>
+            </view>
+
+            <view class="phone">
+                <input name="phone" bindinput="phone" value="{{phone}}" placeholder='{{pageConstant.mobile_placeholder}}'></input>
+            </view>
+
+            <view class="email">
+                <input name="email" bindinput="email" value="{{email}}" placeholder='{{pageConstant.email_placeholder}}'></input>
+            </view>
+
+            <view class="section__title">{{pageConstant.tips_label}}</view>
+            
+            <view class="body-view">
+                <switch color='#0A1016' bindchange="switch1Change" />{{pageConstant.agree_first}}<text class='terms' bindtap='terms'>{{pageConstant.agree_label}}</text>
+            </view>
+            
+            
+        </view>
+        <view class="btn-area">
+            <button formType="submit" bindtap="agree" class='next'>{{pageConstant.confirm}}</button>
+        </view>
+
+    </view>
+
+</form>

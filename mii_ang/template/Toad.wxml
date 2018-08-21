@@ -1,0 +1,15 @@
+<template name="Toad">
+    <view class="toad_content_box" wx:if="{{toad.isHide}}">
+        <view class="toad_content">
+            <view class="ad-box">
+                <view class="ad-title">{{toad.title}}</view>
+                <image class="ad-images" src="{{toad.path}}{{toad.images}}"></image>
+                <view class="ad-info">{{toad.info}}</view>
+                <view bindtap="goto" class="ad-click" data-url="{{toad.url}}">查看详情</view>
+            </view>
+            <view bindtap="adclose" class="ad-close">
+                <image bindtap="adclose" src="/images/icon/ad-close.png"></image>
+            </view>
+        </view>
+    </view>
+</template>
